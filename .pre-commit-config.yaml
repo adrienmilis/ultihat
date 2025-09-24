@@ -1,0 +1,17 @@
+repos:
+  # Python: flake8
+  - repo: https://github.com/pycqa/flake8
+    rev: 7.1.1   # pick latest stable
+    hooks:
+      - id: flake8
+        additional_dependencies: []
+
+  # JavaScript: eslint
+  - repo: local
+    hooks:
+      - id: eslint
+        name: eslint
+        entry: npx eslint
+        language: system
+        types: [javascript, jsx, ts, tsx]
+
