@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-        <!-- x_club_id -->
-        <record id="res_partner_field_x_club_id" model="ir.model.fields">
-            <field name="name">x_club_id</field>
-            <field name="field_description">Club</field>
-            <field name="ttype">many2one</field>
-            <field name="relation">x.club</field>
-            <field name="model_id" ref="base.model_res_partner"/>
-        </record>
         <!-- x_gender -->
         <record id="res_partner_field_x_gender" model="ir.model.fields">
             <field name="name">x_gender</field>
@@ -16,12 +8,12 @@
             <field name="model_id" ref="base.model_res_partner"/>
         </record>
         <record id="res_partner_field_x_gender_selection_male" model="ir.model.fields.selection">
-            <field name="field_id" ref="res_partner_field_gender"/>
+            <field name="field_id" ref="res_partner_field_x_gender"/>
             <field name="name">Male</field>
             <field name="value">m</field>
         </record>
         <record id="res_partner_field_x_gender_selection_female" model="ir.model.fields.selection">
-            <field name="field_id" ref="res_partner_field_gender"/>
+            <field name="field_id" ref="res_partner_field_x_gender"/>
             <field name="name">Female</field>
             <field name="value">f</field>
         </record>
@@ -33,12 +25,12 @@
             <field name="model_id" ref="base.model_res_partner"/>
         </record>
         <record id="res_partner_field_x_role_selection_handler" model="ir.model.fields.selection">
-            <field name="field_id" ref="res_partner_field_role"/>
+            <field name="field_id" ref="res_partner_field_x_role"/>
             <field name="name">Handler</field>
             <field name="value">h</field>
         </record>
         <record id="res_partner_field_x_role_selection_cutter" model="ir.model.fields.selection">
-            <field name="field_id" ref="res_partner_field_role"/>
+            <field name="field_id" ref="res_partner_field_x_role"/>
             <field name="name">Cutter</field>
             <field name="value">c</field>
         </record>

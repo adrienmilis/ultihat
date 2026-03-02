@@ -10,6 +10,7 @@
         # models
         "models/res_partner.xml",
         "models/x_team_maker.xml",
+        "models/x_team.xml",
         # views
         # security
         # "security/ir.model.access.csv",
