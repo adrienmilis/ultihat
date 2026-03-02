@@ -8,12 +8,11 @@
     "depends": ["contacts"],
     "data": [
         # models
-        "models/x_club.xml",
         "models/res_partner.xml",
+        "models/x_team_maker.xml",
         # views
-        "views/x_club_views.xml",
         # security
-        "security/ir.model.access.csv",
+        # "security/ir.model.access.csv",
     ],
     "assets": {},
 }
