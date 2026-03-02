@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- action -->
+    <record id="action_x_team_maker" model="ir.actions.act_window">
+        <field name="name">Team Maker</field>
+        <field name="res_model">x_team_maker</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    <!-- menu -->
+    <menuitem id="menu_x_team_maker"
+        name="Team Maker"
+        action="ultihat.action_x_team_maker"
+        sequence="0"
+    />
+    <!-- form view -->
+    <record id="view_x_team_maker_form" model="ir.ui.view">
+        <field name="name">x.team.maker.form</field>
+        <field name="model">x_team_maker</field>
+        <field name="arch" type="xml">
+            <form string="Team Maker">
+                <sheet>
+                    <group>
+                        <field name="x_name"/>
+                        <field name="x_teams_description"/>
+                    </group>
+                    <notebook>
+                        <page string="Teams">
+                            <field name="x_team_ids">
+                                <list>
+                                    <field name="x_name"/>
+                                    <field name="x_partner_ids" widget="many2many_tags"/>
+                                </list>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <!-- list view -->
+    <record id="view_x_team_maker_list" model="ir.ui.view">
+        <field name="name">x.team.maker.list</field>
+        <field name="model">x_team_maker</field>
+        <field name="arch" type="xml">
+            <list string="Team Maker">
+                <field name="x_name"/>
+            </list>
+        </field>
+    </record>
+</odoo>

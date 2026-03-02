@@ -1,2 +1,3 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_ultihat_x_club,access_ultihat_x_club,model_ultihat_x_club,base.group_user,1,1,1,1
+access_ultihat_x_team_maker,access_ultihat_x_team_maker,ultihat.model_x_team_maker,base.group_user,1,1,1,1
+access_ultihat_x_team,access_ultihat_x_team,ultihat.model_x_team,base.group_user,1,1,1,1

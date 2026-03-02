@@ -12,8 +12,9 @@
         "models/x_team_maker.xml",
         "models/x_team.xml",
         # views
+        "views/x_team_maker_views.xml",
         # security
-        # "security/ir.model.access.csv",
+        "security/ir.model.access.csv",
         "security/ir_rule.xml",
     ],
     "assets": {},

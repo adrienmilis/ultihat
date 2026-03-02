@@ -1,12 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <data noupdate="1">
-        <!-- Rules -->
+        <!-- Rules: User -->
         <record id="ultihat_user_rule_own_partners" model="ir.rule">
             <field name="name">Ultihat User: own partners</field>
             <field name="model_id" ref="base.model_res_partner"/>
             <field name="groups" eval="[Command.link(ref('base.group_user'))]"/>
             <field name="domain_force">[('create_uid', '=', user.id)]</field>
+        </record>
+        <record id="ultihat_user_rule_own_team_maker" model="ir.rule">
+            <field name="name">Ultihat User: own team makers</field>
+            <field name="model_id" ref="ultihat.model_x_team_maker"/>
+            <field name="groups" eval="[Command.link(ref('base.group_user'))]"/>
+            <field name="domain_force">[('create_uid', '=', user.id)]</field>
+        </record>
+        <record id="ultihat_user_rule_own_team" model="ir.rule">
+            <field name="name">Ultihat User: own teams</field>
+            <field name="model_id" ref="ultihat.model_x_team"/>
+            <field name="groups" eval="[Command.link(ref('base.group_user'))]"/>
+            <field name="domain_force">[('create_uid', '=', user.id)]</field>
+        </record>
+
+        <!-- Rules: Admin -->
+        <record id="ultihat_admin_rule_all_team_maker" model="ir.rule">
+            <field name="name">Ultihat Admin: all team makers</field>
+            <field name="model_id" ref="ultihat.model_x_team_maker"/>
+            <field name="groups" eval="[Command.link(ref('base.group_system'))]"/>
+            <field name="domain_force">[(1, '=', 1)]</field>
+        </record>
+        <record id="ultihat_admin_rule_all_team" model="ir.rule">
+            <field name="name">Ultihat Admin: all teams</field>
+            <field name="model_id" ref="ultihat.model_x_team"/>
+            <field name="groups" eval="[Command.link(ref('base.group_system'))]"/>
+            <field name="domain_force">[(1, '=', 1)]</field>
         </record>
     </data>
 </odoo>

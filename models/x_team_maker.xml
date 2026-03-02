@@ -12,13 +12,20 @@
         <field name="model_id" ref="model_x_team_maker"/>
         <field name="required">True</field>
     </record>
-    <!-- x_member_ids -->
-    <!-- <record id="x_club_field_x_member_ids" model="ir.model.fields">
-        <field name="name">x_member_ids</field>
-        <field name="field_description">Members</field>
+    <!-- x_team_ids -->
+    <record id="x_team_maker_field_x_team_ids" model="ir.model.fields">
+        <field name="name">x_team_ids</field>
+        <field name="field_description">Teams</field>
         <field name="ttype">one2many</field>
-        <field name="relation">res.partner</field>
-        <field name="relation_field">x_club_id</field>
-        <field name="model_id" ref="model_x_club"/>
-    </record> -->
+        <field name="relation">x_team</field>
+        <field name="relation_field">x_maker_id</field>
+        <field name="model_id" ref="model_x_team_maker"/>
+    </record>
+    <!-- x_teams_description -->
+    <record id="x_team_maker_field_x_teams_description" model="ir.model.fields">
+        <field name="name">x_teams_description</field>
+        <field name="field_description">Teams Description</field>
+        <field name="ttype">text</field>
+        <field name="model_id" ref="model_x_team_maker"/>
+    </record>
 </odoo>
