@@ -17,9 +17,8 @@
         <record id="x_team_field_x_partner_ids" model="ir.model.fields">
             <field name="name">x_partner_ids</field>
             <field name="field_description">Players</field>
-            <field name="ttype">one2many</field>
+            <field name="ttype">many2many</field>
             <field name="relation">res.partner</field>
-            <field name="inverse_name">x_team_id</field>
             <field name="model_id" ref="model_x_team"/>
         </record>
         <!-- x_maker_id -->

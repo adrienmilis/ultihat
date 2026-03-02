@@ -14,6 +14,7 @@
         # views
         # security
         # "security/ir.model.access.csv",
+        "security/ir_rule.xml",
     ],
     "assets": {},
 }

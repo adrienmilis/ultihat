@@ -18,7 +18,7 @@
         <field name="field_description">Members</field>
         <field name="ttype">one2many</field>
         <field name="relation">res.partner</field>
-        <field name="inverse_name">x_club_id</field>
+        <field name="relation_field">x_club_id</field>
         <field name="model_id" ref="model_x_club"/>
     </record> -->
 </odoo>
