@@ -12,12 +12,21 @@
         action="ultihat.action_x_team_maker"
         sequence="0"
     />
+    <record id="mail.menu_root_discuss" model="ir.ui.menu">
+        <field name="group_ids" eval="[Command.set([ref('base.group_system')])]"/>
+    </record>
+    <record id="contacts.menu_contacts" model="ir.ui.menu">
+        <field name="group_ids" eval="[Command.set([ref('base.group_system')])]"/>
+    </record>
+    <record id="base.menu_management" model="ir.ui.menu">
+        <field name="group_ids" eval="[Command.set([ref('base.group_system')])]"/>
+    </record>
     <!-- form view -->
     <record id="view_x_team_maker_form" model="ir.ui.view">
         <field name="name">x.team.maker.form</field>
         <field name="model">x_team_maker</field>
         <field name="arch" type="xml">
-            <form string="Team Maker">
+            <form string="Team Maker" js_class="team_maker">
                 <sheet>
                     <group>
                         <field name="x_name"/>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Views -->
+    <record id="view_res_partner_form_ultihat" model="ir.ui.view">
+        <field name="name">res.partner.form.ultihat</field>
+        <field name="model">res.partner</field>
+        <field name="arch" type="xml">
+            <form string="Players">
+                <sheet>
+                    <group>
+                        <h1><field name="name"/></h1>
+                    </group>
+                    <group>
+                        <field name="x_level"/>
+                        <field name="x_gender"/>
+                        <field name="x_role"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="view_res_partner_list_ultihat" model="ir.ui.view">
+        <field name="name">res.partner.list.ultihat</field>
+        <field name="model">res.partner</field>
+        <field name="arch" type="xml">
+            <list string="Players">
+                <field name="name"/>
+                <field name="x_level"/>
+                <field name="x_gender"/>
+                <field name="x_role"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="res_partner_ultihat_action" model="ir.actions.act_window">
+        <field name="name">Players</field>
+        <field name="res_model">res.partner</field>
+        <field name="view_mode">list,form</field>
+        <field name="view_ids" eval="[(5, 0, 0),
+            (0, 0, {'view_mode': 'list', 'view_id': ref('ultihat.view_res_partner_list_ultihat')}),
+            (0, 0, {'view_mode': 'form', 'view_id': ref('ultihat.view_res_partner_form_ultihat')})]"
+        />
+    </record>
+    <!-- Menu -->
+    <menuitem id="menu_players"
+        name="Players"
+        action="ultihat.res_partner_ultihat_action"
+        parent="ultihat.menu_x_team_maker"
+    />
+</odoo>

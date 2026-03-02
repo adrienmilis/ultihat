@@ -1,44 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-        <!-- x_gender -->
-        <record id="res_partner_field_x_gender" model="ir.model.fields">
-            <field name="name">x_gender</field>
-            <field name="field_description">Gender</field>
-            <field name="ttype">selection</field>
-            <field name="model_id" ref="base.model_res_partner"/>
-        </record>
-        <record id="res_partner_field_x_gender_selection_male" model="ir.model.fields.selection">
-            <field name="field_id" ref="res_partner_field_x_gender"/>
-            <field name="name">Male</field>
-            <field name="value">m</field>
-        </record>
-        <record id="res_partner_field_x_gender_selection_female" model="ir.model.fields.selection">
-            <field name="field_id" ref="res_partner_field_x_gender"/>
-            <field name="name">Female</field>
-            <field name="value">f</field>
-        </record>
-        <!-- x_role -->
-        <record id="res_partner_field_x_role" model="ir.model.fields">
-            <field name="name">x_role</field>
-            <field name="field_description">Role</field>
-            <field name="ttype">selection</field>
-            <field name="model_id" ref="base.model_res_partner"/>
-        </record>
-        <record id="res_partner_field_x_role_selection_handler" model="ir.model.fields.selection">
-            <field name="field_id" ref="res_partner_field_x_role"/>
-            <field name="name">Handler</field>
-            <field name="value">h</field>
-        </record>
-        <record id="res_partner_field_x_role_selection_cutter" model="ir.model.fields.selection">
-            <field name="field_id" ref="res_partner_field_x_role"/>
-            <field name="name">Cutter</field>
-            <field name="value">c</field>
-        </record>
-        <!-- x_level -->
-        <record id="res_partner_field_x_level" model="ir.model.fields">
-            <field name="name">x_level</field>
-            <field name="field_description">Level</field>
-            <field name="ttype">integer</field>
-            <field name="model_id" ref="base.model_res_partner"/>
-        </record>
+    <!-- x_gender -->
+    <record id="res_partner_field_x_gender" model="ir.model.fields">
+        <field name="name">x_gender</field>
+        <field name="field_description">Gender</field>
+        <field name="ttype">selection</field>
+        <field name="model_id" ref="base.model_res_partner"/>
+    </record>
+    <record id="res_partner_field_x_gender_selection_male" model="ir.model.fields.selection">
+        <field name="field_id" ref="res_partner_field_x_gender"/>
+        <field name="name">Male</field>
+        <field name="value">m</field>
+    </record>
+    <record id="res_partner_field_x_gender_selection_female" model="ir.model.fields.selection">
+        <field name="field_id" ref="res_partner_field_x_gender"/>
+        <field name="name">Female</field>
+        <field name="value">f</field>
+    </record>
+    <!-- x_role -->
+    <record id="res_partner_field_x_role" model="ir.model.fields">
+        <field name="name">x_role</field>
+        <field name="field_description">Role</field>
+        <field name="ttype">selection</field>
+        <field name="model_id" ref="base.model_res_partner"/>
+    </record>
+    <record id="res_partner_field_x_role_selection_handler" model="ir.model.fields.selection">
+        <field name="field_id" ref="res_partner_field_x_role"/>
+        <field name="name">Handler</field>
+        <field name="value">h</field>
+    </record>
+    <record id="res_partner_field_x_role_selection_cutter" model="ir.model.fields.selection">
+        <field name="field_id" ref="res_partner_field_x_role"/>
+        <field name="name">Cutter</field>
+        <field name="value">c</field>
+    </record>
+    <!-- x_level -->
+    <record id="res_partner_field_x_level" model="ir.model.fields">
+        <field name="name">x_level</field>
+        <field name="field_description">Level</field>
+        <field name="ttype">selection</field>
+        <field name="model_id" ref="base.model_res_partner"/>
+    </record>
+    <record id="res_partner_field_x_level_selection_1" model="ir.model.fields.selection">
+        <field name="field_id" ref="res_partner_field_x_level"/>
+        <field name="name">1</field>
+        <field name="value">1</field>
+    </record>
+    <record id="res_partner_field_x_level_selection_2" model="ir.model.fields.selection">
+        <field name="field_id" ref="res_partner_field_x_level"/>
+        <field name="name">2</field>
+        <field name="value">2</field>
+    </record>
+    <record id="res_partner_field_x_level_selection_3" model="ir.model.fields.selection">
+        <field name="field_id" ref="res_partner_field_x_level"/>
+        <field name="name">3</field>
+        <field name="value">3</field>
+    </record>
+    <record id="res_partner_field_x_level_selection_4" model="ir.model.fields.selection">
+        <field name="field_id" ref="res_partner_field_x_level"/>
+        <field name="name">4</field>
+        <field name="value">4</field>
+    </record>
+    <record id="res_partner_field_x_level_selection_5" model="ir.model.fields.selection">
+        <field name="field_id" ref="res_partner_field_x_level"/>
+        <field name="name">5</field>
+        <field name="value">5</field>
+    </record>
 </odoo>

@@ -13,9 +13,14 @@
         "models/x_team.xml",
         # views
         "views/x_team_maker_views.xml",
+        "views/res_partner_views.xml",
         # security
         "security/ir.model.access.csv",
         "security/ir_rule.xml",
     ],
-    "assets": {},
+    "assets": {
+        "web.assets_backend": [
+            "ultihat/static/src/js/x_team_maker.js",
+        ]
+    },
 }

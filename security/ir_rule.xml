@@ -22,6 +22,12 @@
         </record>
 
         <!-- Rules: Admin -->
+        <record id="ultihat_admin_rule_all_partners" model="ir.rule">
+            <field name="name">Ultihat Admin: all partners</field>
+            <field name="model_id" ref="base.model_res_partner"/>
+            <field name="groups" eval="[Command.link(ref('base.group_system'))]"/>
+            <field name="domain_force">[(1, '=', 1)]</field>
+        </record>
         <record id="ultihat_admin_rule_all_team_maker" model="ir.rule">
             <field name="name">Ultihat Admin: all team makers</field>
             <field name="model_id" ref="ultihat.model_x_team_maker"/>
