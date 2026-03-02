@@ -33,11 +33,12 @@
                         <field name="x_number_of_teams"/>
                         <field name="x_nb_of_players"/>
                         <field name="x_teams_description" readonly="1"/>
+                        <field name="x_partner_ids"/>
                     </group>
                     <notebook>
                         <page string="Teams">
                             <field name="x_team_ids">
-                                <list>
+                                <list create="0" delete="0">
                                     <field name="x_name"/>
                                     <field name="x_partner_ids" widget="many2many_tags"/>
                                 </list>
