@@ -20,7 +20,7 @@
     ],
     "assets": {
         "web.assets_backend": [
-            "ultihat/static/src/js/x_team_maker.js",
+            "ultihat/static/src/js/team_maker_form_controller.js",
         ]
     },
 }

@@ -30,7 +30,9 @@
                 <sheet>
                     <group>
                         <field name="x_name"/>
-                        <field name="x_teams_description"/>
+                        <field name="x_number_of_teams"/>
+                        <field name="x_nb_of_players"/>
+                        <field name="x_teams_description" readonly="1"/>
                     </group>
                     <notebook>
                         <page string="Teams">

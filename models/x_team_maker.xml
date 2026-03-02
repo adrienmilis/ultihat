@@ -19,4 +19,18 @@
         <field name="ttype">text</field>
         <field name="model_id" ref="model_x_team_maker"/>
     </record>
+    <!-- x_number_of_teams -->
+    <record id="x_team_maker_field_x_number_of_teams" model="ir.model.fields">
+        <field name="name">x_number_of_teams</field>
+        <field name="field_description">Number of Teams</field>
+        <field name="ttype">integer</field>
+        <field name="model_id" ref="model_x_team_maker"/>
+    </record>
+    <!-- x_nb_of_players -->
+    <record id="x_team_maker_field_x_nb_of_players" model="ir.model.fields">
+        <field name="name">x_nb_of_players</field>
+        <field name="field_description">Number of Players</field>
+        <field name="ttype">integer</field>
+        <field name="model_id" ref="model_x_team_maker"/>
+    </record>
 </odoo>
